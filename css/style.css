@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@500&family=Sacramento&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+    margin: 0 ;
+    padding: 0 ;
+    color :#345B63;
+    font-family:  sans-serif;
+  
+  }
+
+  li, a
+{
+  font-weight: 500 ;
+  font-family: "Montserrat", sans-serif;
+  color: #ecf0f1 ;
+  text-decoration:  none ;
+}
+
+
+
+.nav_links li
+{
+  display: inline-block;
+  margin: 0 20px ;
+}
+
+nav ul
+{
+  background-color:  #000 ;
+  overflow: hidden;
+  margin: 0;
+  padding:  0 ;
+
+}
+
+ul.nav_links li
+{
+list-style:  none ;
+/* float: left; */
+}
+
+ul.nav_links li.topnav-right
+{
+  float: right;
+}
+
+.logo
+{
+  cursor:pointer;
+  width: 120px ;
+}
+
+
+ul.nav_links li a
+{
+  display:  block;
+  text-decoration: none ;
+  font-size: 1rem;
+  text-align: center;
+  padding: 14px ;
+  text-transform: uppercase;
+}
+
+img.logo
+{
+ 
+  padding: 7px ;
+}
+
+
+ nav ul li.dropdown-icon
+{
+  display:  none ;
+}
+
+.nav_links li a:hover
+{
+  color:#0088f9 ;
+}
+
+#top-container
+{
+  padding: 5% 3% ;
+  text-align:  center;
+  background-color: #D4ECDD ;
+}
+
+
+.op-img
+{
+  display: block ;
+  width: 70%;
+  padding: 20px ;
+  margin: auto;
+}
+
+h2
+{
+  font-family: "Merriweather", sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.para
+{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+  line-height: 1.5rem ;
+  padding: 2% , 6% ;
+}
+
+.para-1
+{
+  padding: 3% 8% ;
+}
+.para-2
+{
+  font-size: 1rem;
+  line-height: 1.2rem ;
+  padding: 0 5% ;
+    text-align: center;
+    color: #fff;
+}
+
+#middle-container
+{
+  background-color: #69DADB;
+    padding: 4% 2% ;
+    color:#090910;
+}
+
+.row
+{
+  width: 100%;
+  display:  flex;
+  flex-wrap: wrap;
+  align-content: center ;
+}
+
+.row::after
+{
+  display: block;
+  clear: both;
+  content: "" ;
+}
+
+
+.col-1
+{
+  width: 8.33% ;
+}
+.col-2
+{
+  width: 16.66% ;
+}
+.col-3
+{
+  width: 25% ;
+}
+
+.col-4
+{
+  width: 33.33% ;
+}
+
+.col-5
+{
+  width: 41.66% ;
+}
+.col-6
+{
+  width: 50% ;
+}
+
+.col-7
+{
+  width: 58.33% ;
+}
+
+.col-8
+{
+  width: 66.66% ;
+}
+.col-9
+{
+  width: 75% ;
+}
+
+.col-10
+{
+  width: 83.33% ;
+}
+
+.col-11
+{
+  width: 91.66% ;
+}
+
+.col-12
+{
+  width: 100% ;
+}
+
+
+#middle-container div.row div.col-4 
+{
+  text-align: center  ;
+}
+
+.d-heading
+{
+  padding-bottom: 10% ;
+  font-size: 1.4rem;
+}
+
+.d-icon
+{
+  font-size: 6rem ;
+  margin: 5%;
+}
+
+
+.btn {
+  background: #3f4e57;
+  background-image: -webkit-linear-gradient(top, #3f4e57, #586066);
+  background-image: -moz-linear-gradient(top, #3f4e57, #586066);
+  background-image: -ms-linear-gradient(top, #3f4e57, #586066);
+  background-image: -o-linear-gradient(top, #3f4e57, #586066);
+  background-image: linear-gradient(to bottom, #3f4e57, #586066);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style: none ;
+  margin: 5%;
+}
+
+.btn:hover {
+  background: #005d96;
+  text-decoration: none;
+}
+
+
+#bottom-container
+{
+    padding: 4% 2% ;
+  background-color: #D4ECDD ;
+}
+
+
+#bottom-container div.row div.col-4
+{
+  text-align: center;
+}
+
+
+footer
+{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px ;
+}
+
+.copyright
+{
+  margin-right: auto;
+}
+
+.foot-i
+{
+  padding: 10px;
+  font-size: 1.5rem ;
+}
+
+@media screen and (max-width: 680px ) {
+
+  ul.nav_links li
+  {
+    display:  none ;
+  }
+
+  ul.nav_links li.dropdown-icon
+  {
+    display: block;
+    float: right;
+  }
+
+  ul.nav_links.responsive
+  {
+    position: relative;
+  }
+
+  ul.nav_links.responsive li
+  {
+    display: inline;
+    float: none
+  }
+
+  ul.nav_links.responsive li a
+  {
+    display: block ;
+    text-align:  center ;
+    font-size: 0.8rem;
+  }
+
+  ul.nav_links.responsive li.dropdown-icon
+  {
+    position:  absolute;
+    top: 0;
+    right: 0 ;
+    font-size: 1.5rem;
+  }
+
+  img.op-img
+  {
+    width: 100%
+
+  }
+
+  h2
+{
+  line-height: 1.5;
+  font-size: 1.5rem;
+
+}
+
+p.para.para-1, #bottom-container div.row div.col-4 p
+{
+ padding: 8% 3%; 
+ font-size: 0.8rem ;
+}
+
+#bottom-container div.row div.col-4 p:not(:nth-child(1))
+{
+  padding: 0 ;
+}
+.col-4
+{
+  margin: 10px  ;
+  width: 100%;
+}
+
+.foot-i
+{
+  padding: 5px;
+  font-size: 0.8rem ;
+}
+
+.copyright
+{
+  font-size: 0.5rem;
+}
+
+.d-icon
+{
+  font-size: 5rem ;
+
+}
+
+}

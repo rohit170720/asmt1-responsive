@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav_links" id="dropdown-click">
+        <img class="logo" src="https://iconape.com/wp-content/files/au/152864/svg/152864.svg" alt="one piece">
+          <li class="topnav-right"><a href="#">Anime</a></li>
+          <li class="topnav-right"><a href="#">Manga</a></li>
+          <li class="topnav-right"><a href="#">About</a></li>
+          <li class="topnav-right"><a href="#">Contact</a></li>
+          <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+      </nav>
+
+      <section id="top-container">
+        <img class="op-img" src="./images/one-piece.png" alt="one piece">
+  
+        <h2>Welcome to One Piece</h2>
+        <p class="para para-1">One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 100 tankōbon volumes as of September 2021.</p>
+  
+  
+      </section>
+
+      <section id="middle-container">
+
+        <div class="row">
+          <div class="col-4">
+            <h3 class="d-heading">1000+ Chapters</h3>
+            <i class="d-icon fas fa-anchor"></i>
+            <p class="para para-2">becoming the longest-running manga in Japan's history after 23 years.</p>
+            <button class="btn">Know more</button>
+          </div>
+  
+          <div class="col-4 mid">
+            <h3 class="d-heading">Long Journey Of 22 Years</h3>
+            <i class="d-icon fas fa-ship"></i>
+            <p class="para para-2">becoming the longest-running manga in Japan's history after 23 years.</p>
+            <button class="btn">Know more</button>
+          </div>
+  
+          <div class="col-4">
+            <h3 class="d-heading">Best Story-line</h3>
+            <i class="d-icon fas fa-skull-crossbones"></i>
+            <p class="para para-2">becoming the longest-running manga in Japan's history after 23 years.</p>
+            <button class="btn">Know more</button>
+          </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <section id="bottom-container">
+        <div class="row">
+          <div class="col-4">
+  
+            <h3 class="d-heading">One Piece</h3>
+            <p class="para para-1">One Piece is a Japanese manga series written and illustrated by
+              Eiichiro Oda. It has been serialized in Shueisha's shōnen manga
+              magazine Weekly Shōnen Jump since July 1997.</p>
+          </div>
+  
+          <div class="col-4">
+            <h3 class="d-heading">Latest Chapters</h3>
+            <p>One Piece Chapter 1029</p>
+            <br>
+              <p>One Piece Chapter 1028</p>
+              <br>
+              <p>One Piece Chapter 1026</p>
+              <br>
+              <p>One Piece Chapter 1027</p>
+  
+          </div>
+  
+          <div class="col-4">
+            <h3 class="d-heading">Get in touch</h3>
+            <p><i class="fas fa-phone"></i>+0123456789</p>
+            <br/>
+            <p><i class="fas fa-envelope"></i>getinfo@onepiece.com</p>
+  
+            <br/>
+            <p><i class="fas fa-home"></i>TOEI ANIMATION PHILS.,INC.(TAP)</p>
+          </div>
+  
+          </div>
+  
+        </div>
+  
+      </section>
+      <footer>
+        <div class="copyright">
+          <p>©Copyright 2021 One Piece</p>
+          <p>by Rohit Renke.</p>
+        </div>
+  
+        <div class="social-media">
+          <a href="#"><i class="foot-i  fab fa-facebook-square"></i></a>
+          <a href="#"><i class="foot-i fab fa-instagram"></i></a>
+          <a href="#"><i class="foot-i fab fa-twitter"></i></a>
+          <a href="#"><i class="foot-i far fa-envelope"></i></a>
+        </div>
+      </footer>
+  
+ 
+      
+      <script>
+        function dropdownMenu() {
+          var x = document.getElementById('dropdown-click');
+          if(x.className === "nav_links")
+          {
+            x.className += " responsive" ;
+          }
+          else {
+            x.className = "nav_links"
+          }
+        }
+      </script>
+</body>
+</html>
